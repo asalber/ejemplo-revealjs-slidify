@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ejemplo de presentación con Revela.js y Slidify</title>
+  <meta name="description" content="">
+  <meta name="author" content="Alfredo Sánchez Alberca">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/reveal.min.css">
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/theme/night.css" id="theme">
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" id="theme">
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->  <link rel="stylesheet" href = "assets/css/ribbons.css">
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section class='' data-state='' id='slide-1'>
+  <h1>Título principal</h1>
+  
+</section>
+<section class='' data-state='' id='slide-2'>
+  <h2>Título de la diapositiva</h2>
+  <p>Texto de la diapositiva</p>
+
+</section>
+<section>
+   <section class='' data-state=''>
+    <h2>Listas</h2>
+    <p>Ver tipos de listas en diapositivas verticales</p>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>Lista ordenada</h2>
+
+<ol>
+<li>Primer item</li>
+<li>Segundo item</li>
+<li>Tercer item</li>
+<li class='..</li>'></ol>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>Lista desordenada</h2>
+
+<ul>
+<li>Un item</li>
+<li>Otro item</li>
+<li>Otro item más</li>
+<li class='..</li>'></ul>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>Lista descubiertas</h2>
+
+<ul>
+<li class='fragment'>Un item</li>
+<li class='fragment'>Otro item</li>
+<li class='fragment'>Otro item más</li>
+<li class='fragment'>...</li>
+</ul>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+</section>
+<section>
+   <section class='' data-state=''>
+    <h2>Imágenes</h2>
+    <p>Imagen de tamaño original</p>
+
+<p><img src="img/molinos.jpg" alt="Molinos de Campo de Criptana"></p>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>Imágen de tamaño personalizado</h2>
+
+<p><img src="img/molinos.jpg" alt="Molinos de Campo de Criptana" width="400px"></p>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+</section>
+<section class='' data-state='alert' id='slide-5'>
+  <h2>Diapositiva resaltada</h2>
+  <p>Este contenido es importante.</p>
+
+</section>
+<section class='' data-state='' id='slide-6'>
+  <h2>Columnas</h2>
+  <p>Diapositiva con columnas</p>
+
+<div style='float:left;width:48%;' class='centered'>
+  <ul>
+<li>point 1</li>
+<li>point 2</li>
+<li>point 3</li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <ul>
+<li>point 1</li>
+<li>point 2</li>
+<li>point 3</li>
+</ul>
+
+</div>
+</section>
+    </div>
+  </div>
+</body>
+  <script src="libraries/frameworks/revealjs/lib/js/head.min.js"></script>
+  <script src="libraries/frameworks/revealjs/js/reveal.min.js"></script>
+  <script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    theme: Reveal.getQueryHash().theme || 'night', 
+    transition: Reveal.getQueryHash().transition || 'convex', 
+    dependencies: [
+    // Cross-browser shim that fully implements classList -
+    // https://github.com/eligrey/classList.js/
+      { src: 'libraries/frameworks/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList;}},
+      // Zoom in and out with Alt+click
+      { src: 'libraries/frameworks/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Speaker notes
+      { src: 'libraries/frameworks/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Remote control your reveal.js presentation using a touch device
+      //{ src: 'libraries/frameworks/revealjs/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+      ]
+  });
+  </script>  <!-- LOAD HIGHLIGHTER JS FILES -->
+<script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+ 
+
+</html>
